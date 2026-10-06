@@ -19,11 +19,14 @@ Implementar a primeira versão navegável do site fictício FarBeyond Airlines e
 
 ## Estado atual
 
-- Pasta inicial vazia; sem Git, sem arquivos existentes.
+- Repositório Git local na branch `main`. Primeiro commit: `d92cb40 chore: establish workspace and demo data contracts`.
 - `gh auth status` confirmou conta ativa `adrianonjunior` com escopos `repo` e `workflow`.
 - Node v24.19.0, npm 11.17.0, gh 2.97.0.
-- Skill `impeccable` lida; skill `imagegen` lida. Context7 consultado para a orientação atual do React sobre Effects.
-- Próximos passos: criar projeto, instalar dependências, implementar, verificar, capturar prints, commitar e publicar.
+- Skills `impeccable`, `imagegen` e `find-docs` aplicadas. Context7 consultado para a orientação atual do React sobre Effects.
+- Monorepo, API, dados seed, frontend responsivo, globo interativo, checkout, gráficos, documentação, CI e templates estão implementados.
+- Print real da landing, exploração, resultados, detalhes e checkout, inclusive mobile, salvo em `apps/web/public/screenshots/`.
+- Smoke test de fluxo completo, API, PT/EN, BRL/USD e largura de 390 px passou. Lint, typecheck e build passaram antes dos últimos ajustes; precisam de execução final.
+- Próximos passos: checks finais, recapturar os quatro prints principais após ajustes visuais, commits organizados, criar/push repositório remoto e tentar proteger `main`.
 
 ## Decisões de implementação
 

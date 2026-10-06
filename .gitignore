@@ -5,7 +5,8 @@ dist/
 !.env.example
 .DS_Store
 coverage/
-.impeccable/
+.impeccable/*
+!.impeccable/design.json
 *.tsbuildinfo
 playwright-report/
 test-results/

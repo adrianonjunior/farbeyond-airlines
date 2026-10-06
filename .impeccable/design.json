@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T00:00:00.000Z",
+  "title": "Design System: FarBeyond Airlines",
+  "extensions": {
+    "colorMeta": {
+      "navy-structure": {
+        "role": "primary",
+        "displayName": "Navy estrutural",
+        "canonical": "#071e39"
+      },
+      "blue-action": { "role": "primary", "displayName": "Azul de ação", "canonical": "#1467a4" },
+      "gold-emphasis": {
+        "role": "secondary",
+        "displayName": "Dourado de ênfase",
+        "canonical": "#c89943"
+      }
+    },
+    "shadows": [
+      {
+        "name": "search-float",
+        "value": "0 17px 45px rgba(7,30,57,.14)",
+        "purpose": "Destacar a busca sobre a fotografia."
+      }
+    ],
+    "motion": [
+      {
+        "name": "route-flow",
+        "value": "15s linear infinite",
+        "purpose": "Movimento discreto da rota ativa; desativado com reduced motion."
+      }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "760px" },
+      { "name": "mobile", "value": "520px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Ação principal de busca ou confirmação simulada.",
+      "html": "<button class=\"ds-button-primary\">Buscar voos →</button>",
+      "css": ".ds-button-primary{background:#c89943;color:#071e39;border:0;border-radius:0;padding:12px 19px;min-height:48px;font:800 13px 'DM Sans',sans-serif;cursor:pointer}.ds-button-primary:hover{background:#e0b865}.ds-button-primary:focus-visible{outline:3px solid #3189c3;outline-offset:3px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ação de continuidade em navy.",
+      "html": "<button class=\"ds-button-secondary\">Ver detalhes →</button>",
+      "css": ".ds-button-secondary{background:#071e39;color:#fff;border:0;border-radius:0;padding:12px 19px;min-height:48px;font:800 13px 'DM Sans',sans-serif;cursor:pointer}.ds-button-secondary:hover{background:#164a71}.ds-button-secondary:focus-visible{outline:3px solid #3189c3;outline-offset:3px}"
+    },
+    {
+      "name": "Form Field",
+      "kind": "input",
+      "refersTo": "form-field",
+      "description": "Campo branco com borda e rótulo persistente.",
+      "html": "<label class=\"ds-field\"><span>Origem</span><input value=\"São Paulo (GRU)\" /></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:7px;font:700 11px 'DM Sans',sans-serif;color:#536c81}.ds-field input{border:1px solid #dbe5ec;border-radius:0;background:#fff;color:#071e39;padding:12px 13px;font:700 13px 'DM Sans',sans-serif}.ds-field input:focus-visible{outline:2px solid #3189c3;outline-offset:1px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Atlas de rotas",
+    "overview": "A clareza de um itinerário encontra a amplitude de uma vista aérea.",
+    "keyCharacteristics": [
+      "Fotografia editorial luminosa",
+      "Navegação navy",
+      "Dourado limitado a ações e trajetos destacados",
+      "Cantos retos"
+    ],
+    "rules": [
+      {
+        "name": "The Gold Decision Rule",
+        "body": "Use dourado onde a pessoa escolhe ou acompanha a rota selecionada; nunca como fundo geral.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Marcar preços, clima e gráficos como demonstração.",
+      "Usar dourado nas ações prioritárias e no caminho selecionado.",
+      "Preservar leitura e controles em 390 px."
+    ],
+    "donts": [
+      "Misturar conteúdo comercial real com dados fictícios.",
+      "Usar texto em gradiente ou brilho excessivo.",
+      "Depender do gesto de arrastar para acessar filiais."
+    ]
+  }
+}
