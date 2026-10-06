@@ -69,3 +69,5 @@ Existem exatamente sete filiais e doze rotas direcionais. Valores e horários s�
 Integrar uma fonte climática real pelo contrato `WeatherProvider`, ampliar a malha de voos, introduzir busca com conexões e incorporar testes de usabilidade com viajantes. Qualquer passo rumo a venda real exigirá um projeto separado de pagamentos, proteção de dados e emissão de bilhetes.
 
 Veja [arquitetura](docs/architecture.md), [modelo de dados](docs/data-model.md) e [guia de contribuição](CONTRIBUTING.md).
+
+A política da branch principal está registrada em [docs/branch-protection.json](docs/branch-protection.json): pull request obrigatório sem revisor adicional para esta conta individual, CI `checks` obrigatório, histórico linear e bloqueio de force push e exclusão.

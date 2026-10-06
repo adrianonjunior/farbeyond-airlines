@@ -26,7 +26,11 @@ Implementar a primeira versão navegável do site fictício FarBeyond Airlines e
 - Monorepo, API, dados seed, frontend responsivo, globo interativo, checkout, gráficos, documentação, CI e templates estão implementados.
 - Print real da landing, exploração, resultados, detalhes e checkout, inclusive mobile, salvo em `apps/web/public/screenshots/`.
 - Smoke test de fluxo completo, API, PT/EN, BRL/USD e largura de 390 px passou. Lint, typecheck e build passaram antes dos últimos ajustes; precisam de execução final.
-- Próximos passos: checks finais, recapturar os quatro prints principais após ajustes visuais, commits organizados, criar/push repositório remoto e tentar proteger `main`.
+- Checks `lint`, `format:check`, `typecheck`, `build` e `test:smoke` passaram. CI `Quality` no GitHub concluiu com sucesso no commit `3326d84`.
+- Repositório público criado e enviado: `https://github.com/adrianonjunior/farbeyond-airlines`.
+- Prints principais foram recapturados após os ajustes visuais e estão no commit `52870e3`.
+- Política de proteção desejada para `main` está em `docs/branch-protection.json`; confirmar seu estado remoto com `gh api repos/adrianonjunior/farbeyond-airlines/branches/main/protection`.
+- Próximo passo: publicar esta documentação, aplicar a política de proteção e verificar o estado remoto final.
 
 ## Decisões de implementação
 
