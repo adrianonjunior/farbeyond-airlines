@@ -5,13 +5,37 @@ export interface WeatherProvider {
 }
 
 const conditions: Record<string, Omit<Weather, 'region' | 'updatedAt' | 'synthetic'>> = {
-  'north-america': { temperatureC: 18, condition: 'cloudy', windKmh: 14, visibilityKm: 12, alert: null },
-  'south-america': { temperatureC: 25, condition: 'sunny', windKmh: 9, visibilityKm: 16, alert: null },
+  'north-america': {
+    temperatureC: 18,
+    condition: 'cloudy',
+    windKmh: 14,
+    visibilityKm: 12,
+    alert: null,
+  },
+  'south-america': {
+    temperatureC: 25,
+    condition: 'sunny',
+    windKmh: 9,
+    visibilityKm: 16,
+    alert: null,
+  },
   europe: { temperatureC: 21, condition: 'sunny', windKmh: 11, visibilityKm: 18, alert: null },
   africa: { temperatureC: 23, condition: 'cloudy', windKmh: 16, visibilityKm: 13, alert: null },
-  asia: { temperatureC: 29, condition: 'rainy', windKmh: 8, visibilityKm: 9, alert: 'Pancadas de chuva simuladas' },
+  asia: {
+    temperatureC: 29,
+    condition: 'rainy',
+    windKmh: 8,
+    visibilityKm: 9,
+    alert: 'Pancadas de chuva simuladas',
+  },
   oceania: { temperatureC: 19, condition: 'sunny', windKmh: 12, visibilityKm: 15, alert: null },
-  antarctica: { temperatureC: -18, condition: 'snowy', windKmh: 28, visibilityKm: 5, alert: 'Operação sazonal simulada' },
+  antarctica: {
+    temperatureC: -18,
+    condition: 'snowy',
+    windKmh: 28,
+    visibilityKm: 5,
+    alert: 'Operação sazonal simulada',
+  },
 };
 
 export class MockWeatherProvider implements WeatherProvider {

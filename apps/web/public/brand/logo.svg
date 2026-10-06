@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 267 64" role="img" aria-labelledby="title">
+  <title id="title">FarBeyond Airlines</title>
+  <circle cx="32" cy="32" r="29" fill="#071e39"/>
+  <path d="M6 32h52M32 3c-9 8-14 18-14 29s5 21 14 29M32 3c9 8 14 18 14 29s-5 21-14 29" fill="none" stroke="#78acd0" stroke-width="1.6" opacity=".8"/>
+  <path d="M9 21c13 7 33 7 46 0M9 43c13-7 33-7 46 0" fill="none" stroke="#78acd0" stroke-width="1.4" opacity=".65"/>
+  <path d="m15 40 31-17 5 1-11 9 6 5-2 2-10-3-9 7-3-1 6-10-13 7Z" fill="#fff"/>
+  <text x="73" y="31" fill="#071e39" font-family="Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="-1">FarBeyond</text>
+  <text x="75" y="48" fill="#456780" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="3.2">AIRLINES</text>
+</svg>

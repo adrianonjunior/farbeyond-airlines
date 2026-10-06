@@ -3,13 +3,17 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "workspaces": ["apps/*", "packages/*"],
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
     "dev": "concurrently -k -n api,web -c blue,cyan \"npm run dev -w @fbd/api\" \"npm run dev -w @fbd/web\"",
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "typecheck": "npm run typecheck -w @fbd/shared && npm run typecheck -w @fbd/api && npm run typecheck -w @fbd/web",
+    "test:smoke": "node tests/smoke.mjs",
+    "typecheck": "npm run build -w @fbd/shared && npm run typecheck -w @fbd/shared && npm run typecheck -w @fbd/api && npm run typecheck -w @fbd/web",
     "build": "npm run build -w @fbd/shared && npm run build -w @fbd/api && npm run build -w @fbd/web"
   },
   "devDependencies": {
@@ -17,6 +21,7 @@
     "concurrently": "^9.0.0",
     "eslint": "^9.0.0",
     "eslint-plugin-react-hooks": "^5.0.0",
+    "playwright": "^1.63.0",
     "prettier": "^3.0.0",
     "typescript": "^5.0.0",
     "typescript-eslint": "^8.0.0"
