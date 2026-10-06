@@ -19,25 +19,21 @@ Implementar a primeira versão navegável do site fictício FarBeyond Airlines e
 
 ## Estado atual
 
-- Repositório Git local na branch `main`. Primeiro commit: `d92cb40 chore: establish workspace and demo data contracts`.
-- `gh auth status` confirmou conta ativa `adrianonjunior` com escopos `repo` e `workflow`.
-- Node v24.19.0, npm 11.17.0, gh 2.97.0.
-- Skills `impeccable`, `imagegen` e `find-docs` aplicadas. Context7 consultado para a orientação atual do React sobre Effects.
-- Monorepo, API, dados seed, frontend responsivo, globo interativo, checkout, gráficos, documentação, CI e templates estão implementados.
-- Print real da landing, exploração, resultados, detalhes e checkout, inclusive mobile, salvo em `apps/web/public/screenshots/`.
-- Smoke test de fluxo completo, API, PT/EN, BRL/USD e largura de 390 px passou. Lint, typecheck e build passaram antes dos últimos ajustes; precisam de execução final.
-- Checks `lint`, `format:check`, `typecheck`, `build` e `test:smoke` passaram. CI `Quality` no GitHub concluiu com sucesso no commit `3326d84`.
-- Repositório público criado e enviado: `https://github.com/adrianonjunior/farbeyond-airlines`.
-- Prints principais foram recapturados após os ajustes visuais e estão no commit `52870e3`.
-- Política de proteção desejada para `main` está em `docs/branch-protection.json`; confirmar seu estado remoto com `gh api repos/adrianonjunior/farbeyond-airlines/branches/main/protection`.
-- Próximo passo: publicar esta documentação, aplicar a política de proteção e verificar o estado remoto final.
+- Repositório público: `https://github.com/adrianonjunior/farbeyond-airlines`; branch padrão `main`.
+- Histórico inicial organizado em Conventional Commits (`d92cb40`, `52870e3`, `3326d84`, `a40e5f1`).
+- Monorepo, API, dados seed, frontend responsivo, globo interativo, checkout, gráficos, documentação, CI e templates implementados.
+- Prints reais da landing, exploração, resultados, detalhes e checkout, inclusive mobile, em `apps/web/public/screenshots/`. Hero gerado com `imagegen`; logo e favicon são SVG.
+- Checks locais `lint`, `format:check`, `typecheck`, `build` e `test:smoke` passaram. O smoke test percorre API, busca, compra simulada, globo, PT/EN, BRL/USD e 390 px.
+- CI remoto `Quality` passou no commit `a40e5f1`, incluindo `npm ci`, lint, formato, tipos e build.
+- Proteção de `main` aplicada e confirmada pela API: PR, status `checks`, histórico linear, sem force push nem exclusão. A política reproduzível está em `docs/branch-protection.json`.
+- A revisão visual de desktop e mobile não encontrou bloqueios. O detector da skill `impeccable` retornou `[]` para App e CSS.
 
 ## Decisões de implementação
 
 - Os preços, horários, métricas e clima precisam estar explicitamente marcados como demonstração.
 - Checkout pode recolher dados no estado local do navegador, mas não enviar dados de cartão à API nem persistir dados pessoais.
-- Branch protection depende da disponibilidade do GitHub para a conta/repositório e deve ser verificada após publicação.
+- Alterações futuras em `main` devem passar por pull request e pelo CI obrigatório.
 
-## Comandos de validação previstos
+## Comandos de validação
 
-`npm run lint`, `npm run format:check`, `npm run typecheck`, `npm run build`.
+`npm run lint`, `npm run format:check`, `npm run typecheck`, `npm run build`, `npm run test:smoke` (com `npm run dev` e Chrome).
